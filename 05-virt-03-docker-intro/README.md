@@ -28,12 +28,13 @@ Hey, Netology
 - имя контейнера "ФИО-custom-nginx-t2"
 - контейнер работает в фоне
 - контейнер опубликован на порту хост системы 127.0.0.1:8080
-2. Переименуйте контейнер в "custom-nginx-t2"
-3. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
-4. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
-
+  ![Alt text](image-1.png)
+1. Переименуйте контейнер в "custom-nginx-t2"
+2. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
+   ![Alt text](image-2.png)
+3. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
+![Alt text](image-3.png)
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
-
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
