@@ -30,6 +30,7 @@ Hey, Netology
 - контейнер опубликован на порту хост системы 127.0.0.1:8080
   ![Alt text](image-1.png)
 1. Переименуйте контейнер в "custom-nginx-t2"
+   ![Alt text](image-4.png)
 2. Выполните команду ```date +"%d-%m-%Y %T.%N %Z" ; sleep 0.150 ; docker ps ; ss -tlpn | grep 127.0.0.1:8080  ; docker logs custom-nginx-t2 -n1 ; docker exec -it custom-nginx-t2 base64 /usr/share/nginx/html/index.html```
    ![Alt text](image-2.png)
 3. Убедитесь с помощью curl или веб браузера, что индекс-страница доступна.
