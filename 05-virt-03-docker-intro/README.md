@@ -20,6 +20,7 @@ Hey, Netology
 ```
 - Соберите и отправьте созданный образ в свой dockerhub-репозитории c tag 1.0.0 . 
 - Предоставьте ответ в виде ссылки на https://hub.docker.com/<username_repo>/custom-nginx/general .
+
 [**Ссылка на custom-nginx/general**](https://hub.docker.com/repository/docker/jonhtno/custom-nginx/general)
 
 ## Задача 2
