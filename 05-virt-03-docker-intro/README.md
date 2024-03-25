@@ -76,7 +76,11 @@ To stop a container, use CTRL-c. This key sequence    sends SIGKILL to the conta
 
 
 В качестве ответа приложите скриншоты консоли, где видно все введенные команды и их вывод.
+![Alt text](image-10.png)
 
+![Alt text](image-11.png)
+
+![Alt text](image-9.png)
 
 ## Задача 5
 
