@@ -50,6 +50,7 @@ See 'snap info docker' for additional versions.
 ![alt text](image-04.png)
 5. Подключитесь к БД mysql с помощью команды ```docker exec <имя_контейнера> mysql -uroot -p<пароль root-пользователя>``` . Введите последовательно команды (не забываем в конце символ ; ): ```show databases; use <имя вашей базы данных(по-умолчанию example)>; show tables; SELECT * from requests LIMIT 10;```.
 ![alt text](image-05.png)
+
 6. Остановите проект. В качестве ответа приложите скриншот sql-запроса.
 
 ## Задача 4
