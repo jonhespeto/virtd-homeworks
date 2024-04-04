@@ -61,6 +61,23 @@ See 'snap info docker' for additional versions.
 4. Зайдите на сайт проверки http подключений, например(или аналогичный): ```https://check-host.net/check-http``` и запустите проверку вашего сервиса ```http://<внешний_IP-адрес_вашей_ВМ>:8090```. Таким образом трафик будет направлен в ingress-proxy.
 5. (Необязательная часть) Дополнительно настройте remote ssh context к вашему серверу. Отобразите список контекстов и результат удаленного выполнения ```docker ps -a```
 6. В качестве ответа повторите  sql-запрос и приложите скриншот с данного сервера, bash-скрипт и ссылку на fork-репозиторий.
+### Скрипт
+```bash
+if [ ! -d "/opt/shvirtd-example-python" ] ; then
+    echo "git clone"
+    sudo git clone https://github.com/jonhespeto/shvirtd-example-python.git /opt/shvirtd-example-python
+else
+    echo "repository is cloned"
+    cd /opt/shvirtd-example-python
+    sudo git pull
+fi
+
+cd /opt/shvirtd-example-python
+sudo docker compose -f compose.yaml -f proxy.yaml up -d
+```
+![alt text](image-06.png)
+
+https://github.com/jonhespeto/shvirtd-example-python
 
 ## Задача 5 (*)
 1. Напишите и задеплойте на вашу облачную ВМ bash скрипт, который произведет резервное копирование БД mysql в директорию "/opt/backup" с помощью запуска в сети "backend" контейнера из образа ```schnitzler/mysqldump``` при помощи ```docker run ...``` команды. Подсказка: "документация образа."
