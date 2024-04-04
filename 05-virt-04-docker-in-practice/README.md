@@ -89,9 +89,16 @@ https://github.com/jonhespeto/shvirtd-example-python
 Скачайте docker образ ```hashicorp/terraform:latest``` и скопируйте бинарный файл ```/bin/terraform``` на свою локальную машину, используя dive и docker save.
 Предоставьте скриншоты  действий .
 
+![alt text](image-07.png)
+![alt text](image-08.png)
+![alt text](image-09.png)
+![alt text](image-10.png)
+
 ## Задача 6.1
 Добейтесь аналогичного результата, используя docker cp.  
 Предоставьте скриншоты  действий .
+
+![alt text](image-11.png)
 
 ## Задача 6.2 (**)
 Предложите способ извлечь файл из контейнера, используя только команду docker build и любой Dockerfile.  
